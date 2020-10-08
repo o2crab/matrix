@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head id="head">
+  <meta charset="UTF-8" />
+  <title>Product</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/ress@3.0.0/dist/ress.min.css">
+  <link rel="stylesheet" href="css/product.css">
+</head>
+
+<body>
+  <h1>行列積　計算機</h1>
+  <main>
+    <div id="main_container">
+      <div id="input">
+        <h2>INPUT</h2>
+        <div id="sizeForm">
+          <p>行列のサイズ：<br>
+            (
+            <select name="row1" id="row1" class="sizeForm1">
+              <option value="1">1</option>
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            ,
+            <select name="col1" id="col1" class="sizeForm1 sizeForm2">
+              <option value="1">1</option>
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            ) , (
+            <select name="row2" id="row2" class="sizeForm1 sizeForm2">
+              <option value="1">1</option>
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            ,
+            <select name="col2" id="col2" class="sizeForm2">
+              <option value="1">1</option>
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            )
+          </p>
+        </div>
+
+        <div id="elemForm-container">
+          <div id="elemForm1" class="elemForm">
+            <h3>matrix1</h3>
+            <div>
+              <input id="elem111" class="elem" type="text" size="5" placeholder="0">
+              <input id="elem112" class="elem" type="text" size="5" placeholder="0">
+              <br>
+              <input id="elem121" class="elem" type="text" size="5" placeholder="0">
+              <input id="elem122" class="elem" type="text" size="5" placeholder="0">
+            </div>
+          </div>
+          <div id="elemForm2" class="elemForm">
+            <h3>matrix2</h3>
+            <div>
+              <input id="elem211" class="elem" type="text" size="5" placeholder="0">
+              <input id="elem212" class="elem" type="text" size="5" placeholder="0">
+              <br>
+              <input id="elem221" class="elem" type="text" size="5" placeholder="0">
+              <input id="elem222" class="elem" type="text" size="5" placeholder="0">
+            </div>
+          </div>
+        </div>
+        <button id="calc">積を求める！</button>
+      </div>
+      <div id="output">
+        <h2>OUTPUT</h2>
+        <div id="disp"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script/product.js"></script>
+</body>
+
+</html>
