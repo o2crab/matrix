@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+#main_container {
+  margin: 0 auto;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+#input {
+  border: 2px dashed #88f;
+  padding: 10px;
+  width: 45%;
+}
+
+#output {
+  border: 2px dashed #88f;
+  padding: 10px;
+  width: 50%;
+}
+
+input {
+  border: 1px solid;
+  border-radius: 5px;
+  text-align: center;
+}
+
+select {
+  border: 1px solid #888;
+}
+
+#sizeForm {
+  font-size: 2rem;
+}
+
+#elemForm-container {
+  height: 200px;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.elemForm {
+  width: 45%;
+}
+
+#calc {
+  margin-left: 30px;
+  font-size: 2rem;
+  color: #00f;
+  background-color: #cfc;
+  border: 2px solid;
+  border-radius: 5px;
+}
+#calc:hover {
+  color: #44f;
+  background-color: #9f9;
+}
+
+.result {
+  border: 1px solid #aaa;
+  height: 40px;
+  text-align: center;
+}
+
+.result-inner {
+  display: grid;
+}
+
+.result-outer {
+  margin-top: 50px;
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+}
